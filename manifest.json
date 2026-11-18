@@ -1,0 +1,20 @@
+{
+    "manifest_version": 3,
+    "name": "JAOR Finanças",
+    "version": "1.0",
+    "description": "Extensão para ajudar no controle financeiro.",
+    "side_panel": {
+      "default_path": "popup.html"
+    },
+    "permissions": ["storage", "activeTab", "scripting", "runtime", "sidePanel", "tabs"],
+    "host_permissions": ["<all_urls>"],
+    "action": {
+      "default_popup": "popup.html",
+      "default_icon": "financas-icon.png"
+    },
+    "background": {
+      "service_worker": "background.js"
+    },
+    "open_page": "popup.html"
+  }
+  

@@ -1,0 +1,91 @@
+body {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #e5eff1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100vh;
+}
+
+/* responsivity for devices with width less than 200px */
+@media (min-width: 200px) {
+    body {
+        width: 100%;
+    }
+}
+
+
+#output {
+    width: 82%;
+    padding: 15px;
+    outline: none;
+    border-radius: 5px;
+    text-align: justify;
+    line-height: 1.5;
+    display: flex;
+    flex-direction: column !important;
+    align-items: center !important;
+}
+
+#select-pdf {
+    width: 90%;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    background-color: #453fc3;
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+#select-pdf:hover {
+    background-color: #3f3389;
+}
+
+h1{
+    text-align: center;
+}
+
+#loading {
+    display: none;
+    width: 100px;
+}
+
+.logo {
+    width: 50px;
+    margin-top: 20px;
+}
+
+#view {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.float-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 50px;
+    border: 0px;
+}
+
+#printer-icon{
+    width:50px;
+}
+
+@media print {
+    .no-print {
+        display: none;
+    }
+}
